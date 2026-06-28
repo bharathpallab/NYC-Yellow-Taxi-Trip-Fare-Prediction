@@ -1,0 +1,28 @@
+# Large dataset files — never commit these
+*.parquet
+*.csv
+data/
+nyctaxidata/*.parquet
+nyctaxidata/*.csv
+
+# Python caches
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# Spark output
+spark-warehouse/
+derby.log
+metastore_db/
+
+# Logs and temp
+*.log
+*.tmp
+hs_err_pid*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*.docx

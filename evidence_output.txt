@@ -1,0 +1,94 @@
+Starting Spark session to verify evidence...
+
+================================================================================
+1.5   Evidence Screenshots
+================================================================================
+
+Executing df.show(20):
+
++--------+--------------------+---------------------+---------------+-------------+----------+------------------+------------+------------+------------+-----------+-----+-------+----------+------------+---------------------+------------+--------------------+-----------+------------------+
+|VendorID|tpep_pickup_datetime|tpep_dropoff_datetime|passenger_count|trip_distance|RatecodeID|store_and_fwd_flag|PULocationID|DOLocationID|payment_type|fare_amount|extra|mta_tax|tip_amount|tolls_amount|improvement_surcharge|total_amount|congestion_surcharge|Airport_fee|cbd_congestion_fee|
++--------+--------------------+---------------------+---------------+-------------+----------+------------------+------------+------------+------------+-----------+-----+-------+----------+------------+---------------------+------------+--------------------+-----------+------------------+
+|       1| 2025-01-01 00:18:38|  2025-01-01 00:26:59|              1|          1.6|         1|                 N|         229|         237|           1|       10.0|  3.5|    0.5|       3.0|         0.0|                  1.0|        18.0|                 2.5|        0.0|               0.0|
+|       1| 2025-01-01 00:32:40|  2025-01-01 00:35:13|              1|          0.5|         1|                 N|         236|         237|           1|        5.1|  3.5|    0.5|      2.02|         0.0|                  1.0|       12.12|                 2.5|        0.0|               0.0|
+|       1| 2025-01-01 00:44:04|  2025-01-01 00:46:01|              1|          0.6|         1|                 N|         141|         141|           1|        5.1|  3.5|    0.5|       2.0|         0.0|                  1.0|        12.1|                 2.5|        0.0|               0.0|
+|       2| 2025-01-01 00:14:27|  2025-01-01 00:20:01|              3|         0.52|         1|                 N|         244|         244|           2|        7.2|  1.0|    0.5|       0.0|         0.0|                  1.0|         9.7|                 0.0|        0.0|               0.0|
+|       2| 2025-01-01 00:21:34|  2025-01-01 00:25:06|              3|         0.66|         1|                 N|         244|         116|           2|        5.8|  1.0|    0.5|       0.0|         0.0|                  1.0|         8.3|                 0.0|        0.0|               0.0|
+|       2| 2025-01-01 00:48:24|  2025-01-01 01:08:26|              2|         2.63|         1|                 N|         239|          68|           2|       19.1|  1.0|    0.5|       0.0|         0.0|                  1.0|        24.1|                 2.5|        0.0|               0.0|
+|       1| 2025-01-01 00:14:47|  2025-01-01 00:16:15|              0|          0.4|         1|                 N|         170|         170|           1|        4.4|  3.5|    0.5|      2.35|         0.0|                  1.0|       11.75|                 2.5|        0.0|               0.0|
+|       1| 2025-01-01 00:39:27|  2025-01-01 00:51:51|              0|          1.6|         1|                 N|         234|         148|           1|       12.1|  3.5|    0.5|       2.0|         0.0|                  1.0|        19.1|                 2.5|        0.0|               0.0|
+|       1| 2025-01-01 00:53:43|  2025-01-01 01:13:23|              0|          2.8|         1|                 N|         148|         170|           1|       19.1|  3.5|    0.5|       3.0|         0.0|                  1.0|        27.1|                 2.5|        0.0|               0.0|
+|       2| 2025-01-01 00:00:02|  2025-01-01 00:09:36|              1|         1.71|         1|                 N|         237|         262|           2|       11.4|  1.0|    0.5|       0.0|         0.0|                  1.0|        16.4|                 2.5|        0.0|               0.0|
+|       2| 2025-01-01 00:20:28|  2025-01-01 00:28:04|              1|         2.29|         1|                 N|         237|          75|           2|       11.4|  1.0|    0.5|       0.0|         0.0|                  1.0|        16.4|                 2.5|        0.0|               0.0|
+|       2| 2025-01-01 00:33:58|  2025-01-01 00:37:23|              1|         0.56|         1|                 N|         263|         236|           1|        5.8|  1.0|    0.5|      2.16|         0.0|                  1.0|       12.96|                 2.5|        0.0|               0.0|
+|       2| 2025-01-01 00:42:40|  2025-01-01 00:55:38|              3|         1.99|         1|                 N|         236|         151|           2|       14.2|  1.0|    0.5|       0.0|         0.0|                  1.0|        19.2|                 2.5|        0.0|               0.0|
+|       1| 2025-01-01 00:30:07|  2025-01-01 00:36:48|              1|          1.1|         1|                 N|         229|         141|           2|        7.9|  3.5|    0.5|       0.0|         0.0|                  1.0|        12.9|                 2.5|        0.0|               0.0|
+|       1| 2025-01-01 00:39:55|  2025-01-01 01:13:59|              1|          3.2|         1|                 N|         141|         113|           1|       26.1|  3.5|    0.5|       7.8|         0.0|                  1.0|        38.9|                 2.5|        0.0|               0.0|
+|       1| 2025-01-01 00:16:54|  2025-01-01 00:35:12|              3|          2.5|         1|                 N|         158|         170|           2|       17.7|  3.5|    0.5|       0.0|         0.0|                  1.0|        22.7|                 2.5|        0.0|               0.0|
+|       1| 2025-01-01 00:43:10|  2025-01-01 01:00:03|              1|          1.9|         1|                 N|         164|         229|           1|       16.3|  3.5|    0.5|      4.25|         0.0|                  1.0|       25.55|                 2.5|        0.0|               0.0|
+|       2| 2025-01-01 00:01:41|  2025-01-01 00:07:14|              1|         0.71|         1|                 N|          79|         107|           2|       -7.2| -1.0|   -0.5|      3.66|         0.0|                 -1.0|       -8.54|                -2.5|        0.0|               0.0|
+|       2| 2025-01-01 00:01:41|  2025-01-01 00:07:14|              1|         0.71|         1|                 N|          79|         107|           2|        7.2|  1.0|    0.5|       0.0|         0.0|                  1.0|        12.2|                 2.5|        0.0|               0.0|
+|       1| 2025-01-01 00:33:12|  2025-01-01 00:50:14|              2|          1.2|         1|                 N|         246|          90|           1|       15.6|  3.5|    0.5|       0.0|         0.0|                  1.0|        20.6|                 2.5|        0.0|               0.0|
++--------+--------------------+---------------------+---------------+-------------+----------+------------------+------------+------------+------------+-----------+-----+-------+----------+------------+---------------------+------------+--------------------+-----------+------------------+
+only showing top 20 rows
+
+Figure 1. Preview of the first twenty records from the NYC Yellow Taxi dataset generated using PySpark, illustrating representative journey information, pickup and drop-off locations, timestamps, fare-related variables and other operational attributes used throughout the project.
+================================================================================
+
+Executing df.printSchema():
+
+root
+ |-- VendorID: integer (nullable = true)
+ |-- tpep_pickup_datetime: timestamp_ntz (nullable = true)
+ |-- tpep_dropoff_datetime: timestamp_ntz (nullable = true)
+ |-- passenger_count: long (nullable = true)
+ |-- trip_distance: double (nullable = true)
+ |-- RatecodeID: long (nullable = true)
+ |-- store_and_fwd_flag: string (nullable = true)
+ |-- PULocationID: integer (nullable = true)
+ |-- DOLocationID: integer (nullable = true)
+ |-- payment_type: long (nullable = true)
+ |-- fare_amount: double (nullable = true)
+ |-- extra: double (nullable = true)
+ |-- mta_tax: double (nullable = true)
+ |-- tip_amount: double (nullable = true)
+ |-- tolls_amount: double (nullable = true)
+ |-- improvement_surcharge: double (nullable = true)
+ |-- total_amount: double (nullable = true)
+ |-- congestion_surcharge: double (nullable = true)
+ |-- Airport_fee: double (nullable = true)
+ |-- cbd_congestion_fee: double (nullable = true)
+
+
+Figure 2. Dataset schema produced by PySpark, presenting the twenty dataset attributes together with their respective data types used during preprocessing, feature engineering and machine learning model development.
+================================================================================
+
+Executing File size verification:
+
+Total Record Count: 24,083,384
+File: yellow_tripdata_2025-01.parquet | Size: 56.42 MB
+File: yellow_tripdata_2025-02.parquet | Size: 57.55 MB
+File: yellow_tripdata_2025-03.parquet | Size: 66.72 MB
+File: yellow_tripdata_2025-04.parquet | Size: 64.23 MB
+File: yellow_tripdata_2025-05.parquet | Size: 74.23 MB
+File: yellow_tripdata_2025-06.parquet | Size: 70.14 MB
+
+Combined Dataset Size: 389.29 MB (408,199,712 bytes)
+
+Figure 3. Verification of the combined dataset size (approximately 389 MB) and successful loading of the six monthly Parquet files into the Spark environment, confirming the characteristics described in Section 1.2.
+================================================================================
+SUCCESS: The process with PID 13776 (child process of PID 32068) has been terminated.
+SUCCESS: The process with PID 32068 (child process of PID 27060) has been terminated.
+SUCCESS: The process with PID 27060 (child process of PID 37512) has been terminated.
+WARNING: Using incubator modules: jdk.incubator.vector
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+
+[Stage 0:>                                                          (0 + 1) / 1]
+
+                                                                                
+
+[Stage 1:>                                                          (0 + 1) / 1]
+
+                                                                                

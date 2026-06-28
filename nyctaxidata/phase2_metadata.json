@@ -1,0 +1,28 @@
+{
+  "median_fare_threshold": 12.8,
+  "train_count": 14121012,
+  "test_count": 3530669,
+  "feature_vector_size": 19,
+  "numeric_features": [
+    "trip_distance",
+    "trip_duration_sec",
+    "passenger_count",
+    "tip_amount",
+    "tolls_amount",
+    "extra",
+    "pickup_hour",
+    "pickup_weekday",
+    "pickup_month",
+    "is_weekend",
+    "is_rush_hour",
+    "avg_speed_mph",
+    "PULocationID",
+    "DOLocationID",
+    "RatecodeID",
+    "VendorID",
+    "payment_type"
+  ],
+  "categorical_features": [
+    "store_and_fwd_flag"
+  ]
+}
